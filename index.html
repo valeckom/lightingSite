@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <title>Lighting Calculators</title>
     <link rel="stylesheet" href="src/style.css">
+    <meta name="Description" content="Brightlight.guru is a collection of basic calculators to aid in the selection of theater lighting for given requirements.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -17,6 +19,7 @@
             <h2>Beam Calculator</h2>
             <p>How large will the beam be if the Leko is a set distance away?</p>
             <form>
+                <label for="inputDistance"></label>
                 <input type="number" id="inputDistance" placeholder="Distance (ft)" onfocus="this.value=''">
                 <button type="button" onclick="calcBeam()">Calculate</button>
             </form>
@@ -26,6 +29,7 @@
             <h2>Distance Calculator</h2>
             <p>How far away does the Leko need to be to make a particular size beam?</p>
             <form>
+                <label for="inputWidth"></label>
                 <input type="number" id="inputWidth" placeholder="Width (ft)" onfocus="this.value=''">
                 <button type="button" onclick="calcDist()">Calculate</button>
             </form>
@@ -84,3 +88,5 @@
     &copy; 2019 Mark Valecko
     <script src="src/calc.js"></script>
 </footer>
+
+</html>
