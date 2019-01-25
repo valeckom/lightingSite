@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Lighting Calculators</title>
+    <link rel="stylesheet" href="src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="grid">
+
+        <header>
+            <h1>Leko Calculator</h1>
+        </header>
+
+        <section class="gridLeftTop">
+            <h2>Beam Calculator</h2>
+            <p>How large will the beam be if the leko is so far away?</p>
+            <form>
+                <input type="number" id="inputDistance" placeholder="Distance (ft)" onfocus="this.value=''">
+                <button type="button" onclick="calcBeam()">Calculate</button>
+            </form>
+        </section>
+
+        <section class="gridLeftBottom">
+            <h2>Distance Calculator</h2>
+            <p>How far away does the leko need to be to make a certin size beam?</p>
+            <form>
+                <input type="number" id="inputWidth" placeholder="Width (ft)" onfocus="this.value=''">
+                <button type="button" onclick="calcDist()">Calculate</button>
+            </form>
+        </section>
+
+        <section class="gridChart">
+            <h2 id="tblHead">Welcome!</h2>
+            <p id="tblDisc">Use a calculator to see values in this table.</p>
+            <table>
+                <tr>
+                    <th>Barrel</th>
+                    <th id="tbleValueType">Beam Width</th>
+                </tr>
+                <tr>
+                    <th>5&deg;</th>
+                    <td id="value_0">-</td>
+                </tr>
+                <tr>
+                    <th>10&deg;</th>
+                    <td id="value_1">-</td>
+                </tr>
+                <tr>
+                    <th>14&deg;</th>
+                    <td id="value_2">-</td>
+                </tr>
+                <tr>
+                    <th>19&deg;</th>
+                    <td id="value_3">-</td>
+                </tr>
+                <tr>
+                    <th>26&deg;</th>
+                    <td id="value_4">-</td>
+                </tr>
+                <tr>
+                    <th>36&deg;</th>
+                    <td id="value_5">-</td>
+                </tr>
+                <tr>
+                    <th>50&deg;</th>
+                    <td id="value_6">-</td>
+                </tr>
+                <tr>
+                    <th>70&deg;</th>
+                    <td id="value_7">-</td>
+                </tr>
+                <tr>
+                    <th>90&deg;</th>
+                    <td id="value_8">-</td>
+                </tr>
+            </table>
+        </section>
+
+    </div>
+</body>
+<footer>
+    &copy; 2019 Mark Valecko
+    <script src="src/calc.js"></script>
+</footer>
