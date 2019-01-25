@@ -9,7 +9,7 @@ function calcBeam(){
         dispValue = Math.round(width * 100) / 100;
         dispValue = dispValue.toString() + "'";
 
-        discMsg = `When a Leko is ${inputDistance}ft. away a barrel will produce a beam with a specific diameter.`;
+        discMsg = `When a Leko has a throw of ${inputDistance}' the beam will be:`;
 
         document.getElementById("tblHead").innerHTML = "Beam Results";
         document.getElementById("tblDisc").innerHTML = discMsg;
@@ -26,7 +26,7 @@ function calcDist(){
         dispValue = Math.round(dist * 100) / 100;
         dispValue = dispValue.toString() + "'";
 
-        discMsg = `To make a beam with a diameter of ${inputBeam}ft. a Leko with a barrel needs to be this far away.`;
+        discMsg = `To make a beam with a diameter of ${inputBeam}', a Leko needs to be this far away:`;
 
         document.getElementById("tblHead").innerHTML = "Distance Results";
         document.getElementById("tblDisc").innerHTML = discMsg;
