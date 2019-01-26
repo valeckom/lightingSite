@@ -13,7 +13,7 @@ function calcBeam(){
 
         document.getElementById("tblHead").innerHTML = "Beam Results";
         document.getElementById("tblDisc").innerHTML = discMsg;
-        document.getElementById("tbleValueType").innerHTML = "Width (ft)";
+        document.getElementById("tbleValueType").innerHTML = "Width";
         document.getElementById("value_" + i.toString() ).innerHTML = dispValue;
     }
 }
@@ -30,7 +30,7 @@ function calcDist(){
 
         document.getElementById("tblHead").innerHTML = "Distance Results";
         document.getElementById("tblDisc").innerHTML = discMsg;
-        document.getElementById("tbleValueType").innerHTML = "Distance (ft)";
+        document.getElementById("tbleValueType").innerHTML = "Distance";
         document.getElementById("value_" + i.toString() ).innerHTML = dispValue;
     }
 }

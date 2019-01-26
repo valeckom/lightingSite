@@ -32,14 +32,10 @@ header, footer {
 footer p {
     text-align: right;
     margin: 10px 0 0 0;
+    font-size: small;
 }
 
-h1 {
-    text-align: right;
-    margin: 0 0 10px 0;
-}
-
-h2 {
+h1, h2 {
     margin: 0 0 10px 0;
 }
 
@@ -80,7 +76,13 @@ input {
     text-align: center;
     margin-bottom: 10px;
     width: 100%;
-    border: 1px solid lightgrey;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+input:focus {
+    outline: 0;
+    border-bottom: 2px solid blue;
 }
 
 button {
@@ -97,20 +99,15 @@ form {
 }
 
 @media only screen and (min-width: 620px){
-    .grid {
+    .grid, header, footer {
         max-width: 70%;
-        min-width: 600px;
+        min-width: 760px;
     }
 
     form {
         position: absolute;
         bottom: 0;
         margin: 0;
-    }
-
-    header, footer {
-        max-width: 70%;
-        min-width: 600px;
     }
 
     .gridLeftTop {
