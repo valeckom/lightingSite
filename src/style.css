@@ -133,4 +133,8 @@ form {
     button {
         width: 30%;
     }
+
+    label {
+        display: block;
+    }
 }
