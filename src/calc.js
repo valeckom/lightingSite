@@ -2,6 +2,18 @@
 beamMultiplier = [.1, .14, .21, .26, .32, .47, .65, 1.14, 1.63]
 candela = [1345250, 783310, 404780, 243520, 176255, 90855, 45650, 22270, 11330]
 
+document.addEventListener("keydown", function(event) {
+    // what to do when user presses enter
+    if (event.key === "Enter") {
+        event.preventDefault();
+        
+        el = document.activeElement.id;
+        
+        if (el == "inputDistance"){calcBeam();}
+        if (el == "inputWidth"){calcDist();}
+    }
+});
+
 function calcBeam() {
     inputDistance = document.getElementById("inputDistance").value;
 
@@ -11,10 +23,12 @@ function calcBeam() {
 
     // Set table headers
     discMsg = `When a Leko has a throw of ${inputDistance}' the beam will be:`;
+
     document.getElementById("tblHead").innerHTML = "Beam Results";
     document.getElementById("tblDisc").innerHTML = discMsg;
     document.getElementById("tbleValueType").innerHTML = "Width";
 
+    // Fill out table
     for (i = 0; i < 9; i++) {
         // Calculate the beam diameter
         width = inputDistance * beamMultiplier[i];
