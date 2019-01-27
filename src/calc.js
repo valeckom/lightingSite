@@ -5,6 +5,10 @@ candela = [1345250, 783310, 404780, 243520, 176255, 90855, 45650, 22270, 11330]
 function calcBeam() {
     inputDistance = document.getElementById("inputDistance").value;
 
+    if (inputDistance.length == 0) {
+        return null;
+    }
+
     // Set table headers
     discMsg = `When a Leko has a throw of ${inputDistance}' the beam will be:`;
     document.getElementById("tblHead").innerHTML = "Beam Results";
@@ -27,6 +31,10 @@ function calcBeam() {
 
 function calcDist() {
     inputBeam = document.getElementById("inputWidth").value;
+
+    if (inputBeam.length == 0) {
+        return null;
+    }
 
     // Set table headers
     discMsg = `To make a beam with a diameter of ${inputBeam}', a Leko needs to be this far away:`;
